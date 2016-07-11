@@ -1,4 +1,10 @@
 #!/usr/bin/python
+#
+#       s1-------s2--------s3--------s4
+#      /  \     /  \      /  \      /  \          
+#     h1  h2   h3  h4    h5  h6    h7   h8                   
+#             (c0)
+#
 
 from mininet.net import Mininet
 from mininet.node import Controller, RemoteController, OVSController
