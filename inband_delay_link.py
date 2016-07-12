@@ -3,7 +3,7 @@
 #       s1-------s2--------s3--------s4
 #      /  \     /  \      /  \      /  \          
 #     h1  h2   h3  h4    h5  h6    h7   h8                   
-#             (c1)
+#             (c0)
 #
 
 from mininet.net import Mininet
@@ -25,7 +25,7 @@ def myNetwork():
                    ipBase='10.0.0.0/8')
 
     info( '*** Adding controller\n' )
-    c1=net.addController(name='c1',
+    c0=net.addController(name='c0',
                       controller=RemoteController,
                       ip='10.0.0.3',
                       protocol='tcp',
